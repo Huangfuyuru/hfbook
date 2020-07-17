@@ -3,7 +3,9 @@
       "back-to-top-button",
       "code",
       "splitter",
-      "custom-favicon"
+      "custom-favicon",
+      "popup",
+      "expandable-chapters"
   ],
   "pluginsConfig":{
       "favicon":"./img/icon1.icon"
