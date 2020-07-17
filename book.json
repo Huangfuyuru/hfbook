@@ -1,0 +1,11 @@
+{
+  "plugins":[
+      "back-to-top-button",
+      "code",
+      "splitter",
+      "custom-favicon"
+  ],
+  "pluginsConfig":{
+      "favicon":"./img/icon1.icon"
+  }
+}
