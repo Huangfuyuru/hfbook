@@ -7,9 +7,15 @@
       "popup",
       "expandable-chapters",
       "chapter-fold",
-      "page-treeview"
+      "page-treeview",
+      "tbfed-pagefooter"
   ],
   "pluginsConfig":{
-      "favicon":"./img/icon1.icon"
+      "favicon":"./img/icon1.icon",
+      "tbfed-pagefooter": {
+        "copyright":"",
+        "modify_label": "该文件最后修改时间：",
+        "modify_format": "YYYY-MM-DD HH:mm:ss"
+      }
   }
 }
