@@ -1,51 +1,51 @@
 
-module.exports = function(grunt){
+module.exports = function (grunt) {
   grunt.initConfig({
-    htmlmin:{
-      options:{
-        removeComments:true,
-        collapseWhitespace:true
+    htmlmin: {
+      options: {
+        collapseWhitespace: true,
+        preserveLineBreaks: false
       },
-      files:{
-        expand:true,
-        cwd:'_book',
-        src:['*.html','chapters/*.html'],
-        dest:'dist/'
+      files: {
+        expand: true,
+        cwd: '_book',
+        src: ['*.html', 'chapters/*.html'],
+        dest: 'dist/'
       }
     },
-    cssmin:{
-      files:{
-        expand:true,
-        cwd:'_book',
-        src:['gitbook/**/*.css'],
-        dest:'dist/'
+    cssmin: {
+      files: {
+        expand: true,
+        cwd: '_book',
+        src: ['gitbook/**/*.css'],
+        dest: 'dist/'
       }
     },
-    uglify:{
-      main:{
-        files:[{
-          expand:true,
-          cwd:'_book',
-          src:['gitbook/**/*.js','!gitbook/gitbook-plugin-anchor-navigation-ex/**/*.js'],
-          dest:'dist/'
+    uglify: {
+      main: {
+        files: [{
+          expand: true,
+          cwd: '_book',
+          src: ['gitbook/**/*.js', '!gitbook/gitbook-plugin-anchor-navigation-ex/**/*.js'],
+          dest: 'dist/'
         }]
       }
     },
-    copy:{
-      html:{
-        files:[{
-          expand:true,
-          cwd:'dist',
-          src:['*.html','chapters/*.html'],
-          dest:'_book/'
+    copy: {
+      html: {
+        files: [{
+          expand: true,
+          cwd: 'dist',
+          src: ['*.html', 'chapters/*.html'],
+          dest: '_book/'
         }]
       },
-      js:{
-        files:[{
-          expand:true,
-          cwd:'dist',
-          src:['gitbook/**'],
-          dest:'_book/'
+      js: {
+        files: [{
+          expand: true,
+          cwd: 'dist',
+          src: ['gitbook/**'],
+          dest: '_book/'
         }]
       }
     }
@@ -55,6 +55,6 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.registerTask('default',['htmlmin','cssmin','uglify','copy'])
-}
 
+  grunt.registerTask('minify', ['htmlmin', 'cssmin', 'uglify', 'copy:html', 'copy:js']);
+};
