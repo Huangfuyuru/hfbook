@@ -8,7 +8,7 @@
   * [第二节](./chapters/small/ch02.md)
   * [第三节](./chapters/small/ch03.md)
   * [第四节](./chapters/small/ch04.md)
-* [JS](README.md)
+* [JS](./chapters/js/README.md)
   * [基本概念](./chapters/js/基本概念.md)
   * [JS-微任务和宏任务](./chapters/js/ch01.md)
   * [JS-数据类型](./chapters/js/ch02.md)

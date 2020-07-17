@@ -5,7 +5,9 @@
       "splitter",
       "custom-favicon",
       "popup",
-      "expandable-chapters-small"
+      "expandable-chapters",
+      "chapter-fold",
+      "page-treeview"
   ],
   "pluginsConfig":{
       "favicon":"./img/icon1.icon"
