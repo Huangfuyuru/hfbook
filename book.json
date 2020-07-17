@@ -5,7 +5,7 @@
       "splitter",
       "custom-favicon",
       "popup",
-      "expandable-chapters"
+      "expandable-chapters-small"
   ],
   "pluginsConfig":{
       "favicon":"./img/icon1.icon"
