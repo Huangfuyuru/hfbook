@@ -4,8 +4,8 @@ module.exports = function (grunt) {
     cssmin: {
       files: {
         expand: true,
-        cwd: '_book',
-        src: ['gitbook/**/*.css'],
+        cwd: 'gitbook',
+        src: ['./**/*.css'],
         dest: 'dist/'
       }
     }
