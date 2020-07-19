@@ -8,3 +8,7 @@
   * [笔试-06](./chapters/written-examination/ch06.md)
   * [笔试-07](./chapters/written-examination/ch07.md)
   * [笔试-08](./chapters/written-examination/ch08.md)
+* [每日项目收获](./chapters/aiot-work/README.md)
+  * [6.17-6.21](./chapters/aiot-work/ch01.md)
+  * [6.22-6.23](./chapters/aiot-work/ch02.md)
+  * [6.28-7.3](./chapters/aiot-work/ch03.md)
