@@ -35,16 +35,16 @@
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
         "insert-logo": {
-            "url": "./img/icon5.ico",
+            "url": "./img/icon6.ico",
             "style": "background: none; max-height: 30px; min-height: 30px"
         },
         "favicon":{
-            "shortcut": "./img/icon2.ico",
-            "bookmark": "./img/icon2.ico",
-            "appleTouch": "./img/icon2.ico",
+            "shortcut": "./img/icon6.ico",
+            "bookmark": "./img/icon6.ico",
+            "appleTouch": "./img/icon6.ico",
             "appleTouchMore": {
-                "120x120": "./img/icon2.ico",
-                "180x180": "./img/icon2.ico"
+                "120x120": "./img/icon6.ico",
+                "180x180": "./img/icon6.ico"
             }
         }  
     }
