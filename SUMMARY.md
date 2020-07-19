@@ -12,6 +12,8 @@
   * [变量的解构赋值](./chapters/es6/ch01.md)
   * [字符串的扩展](./chapters/es6/ch02.md)
   * [字符串新增的方法](./chapters/es6/ch03.md)
+  * [正则](./chapters/es6/ch04.md)
+  * [数组的扩展](./chapters/es6/ch05.md)
   * [JS-ECMAScript6](./chapters/es6/ch08.md)
 * [CSS](./chapters/css/README.md)
   * [flex弹性布局](./chapters/css/flex.md)
