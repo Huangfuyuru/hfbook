@@ -1,0 +1,24 @@
+{
+    "title": "皇二甫学习笔记",
+    "description": "一个线上笔记本",
+    "author": "皇甫玉茹",
+    "language": "zh-hans",
+    "plugins": [
+        "-search",
+        "-highlight",
+        "-lunr",
+        "copy-code-button",
+        "pageview-count",
+        "popup",
+        "search-plus",
+        "anchor-navigation-ex",
+        "splitter",
+        "expandable-chapters",
+        "chapter-fold"
+    ],
+    "pluginsConfig":{
+        "anchor-navigation-ex": {
+            "multipleH1": false
+        }
+    }
+}
