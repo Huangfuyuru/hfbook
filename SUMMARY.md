@@ -8,6 +8,7 @@
 - [设计模式](./chapters/design-pattern/README.md)
 - [正则](./chapters/regex/README.md)
 - [性能优化](./chapters/optimize/README.md)
+  - [webpack](./chapters/optimize/README.md)
 - [React](./chapters/react/README.md)
 - [实习记录](./chapters/aiot-work/README.md)
 - [前端工程化](./chapters/webpack/README.md)
