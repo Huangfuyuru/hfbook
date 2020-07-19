@@ -16,7 +16,9 @@
         "expandable-chapters",
         "chapter-fold",
         "github",
-        "tbfed-pagefooter"
+        "tbfed-pagefooter",
+        "prism",
+        "custom-favicon"
     ],
     "pluginsConfig":{
         "anchor-navigation-ex": {
@@ -29,6 +31,7 @@
             "copyright":"",
             "modify_label": "该文件最后修改时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
-        }
+        },
+        "favicon": "./img/icon1.ico"
     }
 }
