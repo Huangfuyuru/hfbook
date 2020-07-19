@@ -16,7 +16,7 @@ module.exports = function (grunt) {
       files: {
         expand: true,
         cwd: '_book',
-        src: ['gitbook/**/*.css','chapters/*.css'],
+        src: ['gitbook/**/*.css'],
         dest: 'dist/'
       }
     },
@@ -25,7 +25,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '_book',
-          src: ['gitbook/**/*.js', '!gitbook/gitbook-plugin-anchor-navigation-ex/**/*.js','chapters/*.js'],
+          src: ['gitbook/**/*.js', '!gitbook/gitbook-plugin-anchor-navigation-ex/**/*.js'],
           dest: 'dist/'
         }]
       }
@@ -43,24 +43,17 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: 'dist',
-          src: ['gitbook/**','chapters/*.js'],
+          src: ['gitbook/**'],
           dest: '_book/'
-        }]
-      },
-      css:{
-        files:[{
-          expand:true,
-          cwd:'dist',
-          src:['gitbook/**/*.css','chapters/*.css'],
-          dest:'_book/'
         }]
       }
     }
-});
+  });
+
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('minify', ['htmlmin','cssmin','uglify','copy']);
+  grunt.registerTask('minify', ['htmlmin', 'cssmin', 'uglify', 'copy:html', 'copy:js']);
 };
