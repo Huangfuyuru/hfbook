@@ -13,7 +13,8 @@
         "search-plus",
         "anchor-navigation-ex",
         "splitter",
-        "expandable-chapters-small",
+        "chapter-fold",
+        "expandable-chapters",
         "github",
         "tbfed-pagefooter",
         "prism",
@@ -33,16 +34,16 @@
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
         "insert-logo": {
-            "url": "./img/icon2.ico",
+            "url": "./img/icon5.ico",
             "style": "background: none; max-height: 30px; min-height: 30px"
         },
         "favicon":{
-            "shortcut": "./img/icon1.ico",
-            "bookmark": "./img/icon1.ico",
-            "appleTouch": "./img/icon1.ico",
+            "shortcut": "./img/icon2.ico",
+            "bookmark": "./img/icon2.ico",
+            "appleTouch": "./img/icon2.ico",
             "appleTouchMore": {
-                "120x120": "./img/icon1.ico",
-                "180x180": "./img/icon1.ico"
+                "120x120": "./img/icon2.ico",
+                "180x180": "./img/icon2.ico"
             }
         }  
     }
