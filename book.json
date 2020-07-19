@@ -17,9 +17,7 @@
         "chapter-fold",
         "github",
         "tbfed-pagefooter",
-        "prism",
-        "insert-logo",
-        "favicon"
+        "prism"
     ],
     "pluginsConfig":{
         "anchor-navigation-ex": {
@@ -32,19 +30,6 @@
             "copyright":"",
             "modify_label": "该文件最后修改时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
-        },
-        "insert-logo": {
-            "url": "./img/icon6.ico",
-            "style": "background: none; max-height: 30px; min-height: 30px"
-        },
-        "favicon":{
-            "shortcut": "./img/icon6.ico",
-            "bookmark": "./img/icon6.ico",
-            "appleTouch": "./img/icon6.ico",
-            "appleTouchMore": {
-                "120x120": "./img/icon6.ico",
-                "180x180": "./img/icon6.ico"
-            }
-        }  
+        }
     }
 }
