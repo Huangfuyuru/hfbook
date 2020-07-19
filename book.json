@@ -7,7 +7,6 @@
         "-search",
         "-highlight",
         "-lunr",
-        "code",
         "pageview-count",
         "popup",
         "search-plus",
