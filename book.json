@@ -14,11 +14,21 @@
         "anchor-navigation-ex",
         "splitter",
         "expandable-chapters",
-        "chapter-fold"
+        "chapter-fold",
+        "github",
+        "tbfed-pagefooter"
     ],
     "pluginsConfig":{
         "anchor-navigation-ex": {
             "multipleH1": false
+        },
+        "github": {
+            "url": "https://github.com/huangfuyuru"
+        },
+        "tbfed-pagefooter": {
+            "copyright":"",
+            "modify_label": "该文件最后修改时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
         }
     }
 }
