@@ -13,13 +13,12 @@
         "search-plus",
         "anchor-navigation-ex",
         "splitter",
-        "expandable-chapters",
-        "chapter-fold",
+        "expandable-chapters-small",
         "github",
         "tbfed-pagefooter",
         "prism",
         "insert-logo",
-        "custom-favicon"
+        "favicon"
     ],
     "pluginsConfig":{
         "anchor-navigation-ex": {
@@ -37,6 +36,14 @@
             "url": "./img/icon2.ico",
             "style": "background: none; max-height: 30px; min-height: 30px"
         },
-        "favicon": "./img/icon1.ico"      
+        "favicon":{
+            "shortcut": "./img/icon1.ico",
+            "bookmark": "./img/icon1.ico",
+            "appleTouch": "./img/icon1.ico",
+            "appleTouchMore": {
+                "120x120": "./img/icon1.ico",
+                "180x180": "./img/icon1.ico"
+            }
+        }  
     }
 }
