@@ -1,5 +1,6 @@
 - [简介](./README.md)
 - [JavaScript](./chapters/javascript/README.md)
+- [ES6](./chapters/es6/README.md)
 - [Html](./chapters/html/README.md)
 - [CSS](./chapters/css/README.md)
 - [网络原理](./chapters/computer-network/README.md)
