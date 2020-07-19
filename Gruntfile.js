@@ -32,12 +32,14 @@ module.exports = function (grunt) {
     },
     copy: {
       html: {
-        files: [{
-          expand: true,
-          cwd: 'dist',
-          src: ['*.html', 'chapters/*.html'],
-          dest: '_book/'
-        }]
+        files: [
+          {
+            expand: true,
+            cwd: 'dist',
+            src: ['*.html', 'chapters/*.html'],
+            dest: '_book/'
+          }
+        ]
       },
       js: {
         files: [{
