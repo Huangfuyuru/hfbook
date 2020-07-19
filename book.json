@@ -17,7 +17,8 @@
         "github",
         "tbfed-pagefooter",
         "prism",
-        "insert-logo"
+        "insert-logo",
+        "favicon"
     ],
     "pluginsConfig":{
         "anchor-navigation-ex": {
