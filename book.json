@@ -18,7 +18,8 @@
         "github",
         "tbfed-pagefooter",
         "prism",
-        "insert-logo"
+        "insert-logo",
+        "custom-favicon"
     ],
     "pluginsConfig":{
         "anchor-navigation-ex": {
@@ -35,6 +36,7 @@
         "insert-logo": {
             "url": "./img/icon2.ico",
             "style": "background: none; max-height: 30px; min-height: 30px"
-        }      
+        },
+        "favicon": "./img/icon1.ico"      
     }
 }
