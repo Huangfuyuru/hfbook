@@ -7,7 +7,7 @@
         "-search",
         "-highlight",
         "-lunr",
-        "copy-code-button",
+        "code",
         "pageview-count",
         "popup",
         "search-plus",
@@ -18,7 +18,7 @@
         "github",
         "tbfed-pagefooter",
         "prism",
-        "custom-favicon"
+        "insert-logo"
     ],
     "pluginsConfig":{
         "anchor-navigation-ex": {
@@ -32,6 +32,9 @@
             "modify_label": "该文件最后修改时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
-        "favicon": "./img/icon1.ico"
+        "insert-logo": {
+            "url": "./img/icon2.ico",
+            "style": "background: none; max-height: 30px; min-height: 30px"
+        }      
     }
 }
