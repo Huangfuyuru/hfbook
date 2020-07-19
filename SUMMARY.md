@@ -1,4 +1,4 @@
 - [简介](./README.md)
-- [第一章](./chapter/ch01.md)
-- [第二章](./chapter/ch02.md)
-- [第三章](./chapter/ch03.md)
+- [第一章](./chapters/ch01.md)
+- [第二章](./chapters/ch02.md)
+- [第三章](./chapters/ch03.md)
