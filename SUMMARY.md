@@ -6,6 +6,7 @@
 - [网络原理](./chapters/computer-network/README.md)
   - [http和https](./chapters/computer-network/ch01.md)
 - [浏览器原理](./chapters/brower/README.md)
+  - [cookie](./chapters/brower/ch01.md)
 - [设计模式](./chapters/design-pattern/README.md)
 - [正则](./chapters/regex/README.md)
 - [性能优化](./chapters/optimize/README.md)

@@ -108,9 +108,21 @@ JSON.parse(JSON.stringify(obj))
 
 
 
-## 浅拷贝
-
 ## 防抖
+
+```javascript
+function debounce(fn,time) {
+	let timer = null;
+    return function(){
+        if(timer != null){
+            clearTimeout(timer)
+        }
+        timer = setTimeout(fn,time)
+    }
+}
+```
+
+
 
 ## 节流
 
