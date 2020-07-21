@@ -16,6 +16,7 @@
   - [webpack](./chapters/webpack/ch01.md)
 - [数据结构](./chapters/data-structure/README.md)
 - [算法](./chapters/algorithm/README.md)
+- [代码集](./chapters/code.md)
 - [面试](./chapters/interview/README.md)
 - [笔试](./chapters/written/README.md)
   
