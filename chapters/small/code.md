@@ -110,6 +110,8 @@ JSON.parse(JSON.stringify(obj))
 
 ## 防抖
 
+一定时间段内没有触发事件，事件处理函数才会执行。如果在设定的时间段内触发事件，就重新开始延时。比如搜索发请求
+
 ```javascript
 function debounce(fn,time) {
 	let timer = null;
@@ -125,6 +127,27 @@ function debounce(fn,time) {
 
 
 ## 节流
+
+当持续触发事件时，一定的时间段内只调用一次事件处理函数。
+
+```javascript
+function throttle(func,delay) {
+	var prev = Date.now();
+    return function() {
+        var context = this;
+        var args = arguments;
+        var now = Date.now();
+        if(now-prev >= delay){
+            func.apply(context,args)
+            prev = Date.now()
+        }
+    }
+}
+```
+
+
+
+可以使用节流优化图片懒加载
 
 ## 手写 bind函数
 
