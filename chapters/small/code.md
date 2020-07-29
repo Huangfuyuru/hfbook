@@ -153,9 +153,46 @@ function throttle(func,delay) {
 
 ## 利用apply函数实现bind函数
 
+```javascript
+Function.prototype._bind = function(target){
+    let _this = this;
+    let args = Array.prototype.slice.call(arguments,1)
+    return function(){
+        return _this.apply(target,args)
+    }
+}
+let obj = {
+    name:'xx'
+}
+function test(args){
+    console.log('我的名字',this.name);
+    console.log('接收的参数',args)
+}
+console.log(test._bind(obj,'I am args')())
+```
+
+
+
 ## 创建10个a标签，点击的时候弹出对应的序号
 
 ## new的过程
 
 
+
+## 拉平数组
+
+```javascript
+function reduceArr(list){
+    let result = [];
+    for(let i=0;i<list.length;i++){
+        if(Array.isArray(list[i])){
+            result = result.concat(reduceArr(list[i]))
+        }else{
+            result.push(list[i])
+        }
+    }
+    return result
+}
+console.log(reduceArr(lists))
+```
 
