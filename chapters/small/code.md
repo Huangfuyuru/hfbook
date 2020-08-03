@@ -196,3 +196,28 @@ function reduceArr(list){
 console.log(reduceArr(lists))
 ```
 
+
+
+## 找出一个数组中出现次数最多的元素
+
+```javascript
+let arr = [];
+for(var i=0;i<1000;i++){
+    arr[i] = parseInt(Math.random()*1000)
+}
+function findMore(arr){
+    let num = null; //存储出现次数最多的元素
+    let max = 1; //存储次数
+    arr.reduce((p,k)=>{
+        p[k]?p[k]++:p[k]=1;
+        if(p[k]>max){
+            max = p[k];
+            num = k
+        }
+        return p;
+    },{})
+    return num
+}
+console.log(findMore(arr))
+```
+
