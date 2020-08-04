@@ -2,6 +2,7 @@
 - [JavaScript](./chapters/javascript/README.md)
   - [数据类型](./chapters/javascript/ch01.md)
 - [ES6](./chapters/es6/README.md)
+  - [Promise](./chapters/es6/promise.md)
 - [Html](./chapters/html/README.md)
 - [CSS](./chapters/css/README.md)
   - [小知识点](./chapters/css/css.md)
