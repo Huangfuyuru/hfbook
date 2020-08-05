@@ -1,6 +1,6 @@
 # Promise 对象
 
-## 1. Promise 含义
+## Promise 含义
 
 Promise  是一个容器，里面保存着某个未来才会结束的事情的结果。
 
@@ -62,3 +62,65 @@ Promise.allSettled()方法接受一组Promise实例作为参数，包装成一�
 
 Promise.any() 方法接受一组Promise实例作为参数，包装成一个新的Promise实例。只要参数实例中有一个是resolved状态，包装实例就会变成resolved状态。如果所有参数实例都变成了rejected状态，包装实例就会变成rejected状态。
 
+## Promise.resolve()
+
+将现有对象转为Promise对象
+
+(1) 参数是一个Promise实例
+
+(2) 参数是一个thenable对象
+
+(3) 参数不是具有then方法的对象，或根本 就不是对象
+
+(4) 不带有任何参数
+
+## Promise.reject()
+
+
+
+## 应用
+
+#### 加载图片
+
+```javascript
+function loadImg(url){
+    return new Promise((resolve,reject)=>{
+        let image = new Image();
+        image.src = url;
+        image.onload = function(){
+            resolve(image)
+        }
+        image.onerror = function(){
+            reject(image)
+        }
+    })
+}
+loadImg('./a.jpg').then((res)=>{
+    document.body.appendChild(res)
+}).catch((res)=>{
+    console.log('出错了',res)
+})
+```
+
+
+
+```javascript
+console.log('start');
+setTimeout(()=>{
+    console.log('time')
+})
+Promise.resolve().then(()=>{
+    console.log('resolve')
+})
+console.log('end')
+//start
+//end
+//resolve
+//time
+```
+
+* 刚开始整个脚本作为一个宏任务来执行，对于同步代码直接压入执行栈进行执行，因此先打印出start和end。
+* setTimout作为一个宏任务被放入宏任务队列(下一个)
+* Promise.then作为一个微任务被放入微任务队列
+* 本次宏任务执行完，检查微任务，发现Promise.then，执行它
+* 接下来进入下一个宏任务，发现setTimeout，执行。
