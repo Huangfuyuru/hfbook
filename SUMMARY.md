@@ -22,6 +22,7 @@
 - [性能优化](./chapters/optimize/README.md)
   - [图片懒加载](./chapters/optimize/ch01.md)
   - [《高性能网站建设指南》](./chapters/optimize/ch02.md)
+  - [内存泄漏](./chapters/optimize/内存泄漏.md)
 - [React](./chapters/react/README.md)
 - [实习记录](./chapters/aiot-work/README.md)
   - [七月](./chapters/aiot-work/七月.md)
