@@ -12,6 +12,7 @@
 - [网络原理](./chapters/computer-network/README.md)
   - [http和https](./chapters/computer-network/ch01.md)
   - [tcp(没有看完)](./chapters/computer-network/tcp.md)
+  - [常见的服务端推送解决方案](./chapters/computer-network/服务器推送.md)
 - [浏览器原理](./chapters/brower/README.md)
   - [浏览器数据存储方式](./chapters/brower/ch01.md)
   - [浏览器缓存机制](./chapters/brower/ch02.md)
