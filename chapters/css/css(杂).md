@@ -167,3 +167,85 @@ div{
    ```
 
    注意，这个时候的height是相对于父元素的padding-box来计算的
+
+
+
+max-width/max-height 初始值是none.
+
+min-width/min-height 初始值是auto
+
+max-width会覆盖width
+
+```
+<img src="a.jpg" style="width:480px !important;">
+img {max-width:256px}
+```
+
+答案是256px, style !important都会失效，因为max-width会覆盖width
+
+超越最大
+
+超越最大指的是 min-width 覆盖max-width,当min-width 和 max-width 发生冲突的时候。
+
+
+
+## 内联元素
+
+内联元素的“内联”指的是“外在盒子”，inline-block和inline-table都是内联元素，`<button>`也是内联元素，因为其display是inline-block
+
+内联元素的特征就是可以和文字在一行显示。因此，文字是内联元素，图片是内联元素，表单控件也是内联元素。
+
+幽灵空白节点：在H5文档声明中，在每个“行框盒子”前面，具有该元素的字体和行高属性的0宽度的内联盒。
+
+每一行就是一个行框盒子。
+
+
+
+#### 替换元素
+
+替换元素：通过修改某个属性值呈现的内容就可以被替换的元素称为“替换元素”
+
+`<img><object><video><iframe><textarea><input>`都是典型的替换元素。替换元素除了内容可替换外，还有以下一些特性
+
+(1) 内容的外观不受页面上的 css 的影响。注意是内容的外观
+
+(2)有自己的尺寸
+
+(3)在很多CSS属性上有自己的一套表现规则。
+
+所有替换元素都是内联元素
+
+替换元素的尺寸计算规则
+
+(1)固有尺寸：指替换内容原本的尺寸。
+
+(2)HTML尺寸：HTML尺寸只能通过HTML原生属性改变,这些 HTML 原生属性包括`<img>`的 width 和 height 属性、 `<input>`的 size 属性、 `<textarea>`的 cols 和 rows 属性等  
+
+(3)CSS尺寸:特指可以通过CSS的width和height或者max-width/min-width和max-height/min-height设置的尺寸。
+
+计算规则:CSS 尺寸>HTML 尺寸 > 固有尺寸
+
+如果固有尺寸含有固有的宽高比例，同时仅设置了宽度或仅设置了高度，则元素依照固有的宽高比例显示。所以我们一般设置宽度而不设置高度，就是利用这个特性
+
+```
+img {width:200px}
+<img src="1.jpg">
+```
+
+最终图片所呈现的宽高是 200 * 150
+
+
+
+padding
+
+1. padding 属性是不支持负值的
+2. padding 支持百分比值，padding 百分比值无论是水平方向还是垂直方向均相对于宽度计算
+
+
+
+
+
+
+
+
+
