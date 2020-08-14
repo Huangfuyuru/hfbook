@@ -68,6 +68,8 @@ console.log(msg.startsWidth(‘Hello;))
 
 基本思想是利用原型让一个引用类型继承另一个引用类型的属性和方法。
 
+**原型链的构建是通过将一个类型的实例赋值给另一个构造函数的原型实现的，子类型就能够访问超类型的所有属性和方法**
+
 构造函数、原型和实例的关系：
 
 每个构造函数都有一个原型对象，原型对象都包含一个指向构造函数的指针。而实例都包含一个指向原型对象的指针。那么，我们假如让原型对象等于另一个类型的实例，此时的原型对象将包含一个指向另一个原型的指针。
@@ -92,7 +94,7 @@ console.log(msg.startsWidth(‘Hello;))
 
 ##### 实现继承的方法
 
-组合继承
+###### 组合继承
 
 ```javascript
 function SuperType(name){
@@ -108,7 +110,6 @@ function SubType(name,age){
 }
 SubType.prototype = new SuperType();
 SubType.prototype.constructor = SubType;
-SubType.prototype.
 var ins = new SubType();
 var ins2 = new SubType();
 ins.colors.push('pink');
@@ -117,4 +118,36 @@ console.log(ins.name)
 ```
 
 
+
+###### 寄生组合继承
+
+组合继承很常用，但是他的问题是无论在什么情况下，都会调用两次父类型构造函数。一次是在创建子类型原型时，一次是在子类型构造函数内部。也就是说子类型最终会包含父类型的全部实例属性。
+
+寄生组合式继承通过借用构造函数来继承属性，通过原型链的混成形式来继承方法。基本思路：不必为了指定子类型的原型而调用父类型的构造函数，我们所需要的无非就是超类型原型的一个副本而已
+
+```javascript
+function inheritPrototype(subType,superType){
+    var prototype = Object.create(superType.prototype);
+    prototype.constructor = subType;
+    subType.prototype = prototype
+}
+```
+
+```javascript
+function SuperType(name){
+    this.name = name;
+    this.colors = ["red", "blue", "green"];
+}
+SuperType.prototype.sayName = function(){
+	alert(this.name);
+};
+function SubType(name, age){
+    SuperType.call(this, name);
+    this.age = age;
+}
+inheritPrototype(SubType, SuperType);
+SubType.prototype.sayAge = function(){
+	alert(this.age);
+};
+```
 

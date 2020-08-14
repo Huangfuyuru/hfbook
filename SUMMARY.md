@@ -1,6 +1,8 @@
 - [简介](./README.md)
 - [JavaScript](./chapters/javascript/README.md)
   - [数据类型](./chapters/javascript/ch01.md)
+  - [原型和原型链](./chapters/javascript/原型和原型链.md)
+  - [Ajax](./chapters/javascript/Ajax.md)
 - [ES6](./chapters/es6/README.md)
   - [Promise](./chapters/es6/promise.md)
   - [箭头函数](./chapters/es6/箭头函数.md)
