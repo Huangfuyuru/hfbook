@@ -151,3 +151,37 @@ SubType.prototype.sayAge = function(){
 };
 ```
 
+
+
+检测类型
+
+如果要检测一个变量是不是基本数据类型，**typeof**是最佳工具。
+
+但是如果要检测一个对象或null,**typeof**会返回'object'
+
+如果要检测引用类型的值时，**instanceof**来判断该变量是否是引用类型的实例
+
+任何值调用Object原生的toString()方法，都会返回一个[object NativeConstructorName]格式的字符串。每个类内部都有一个[[Class]]属性，这个属性中就指定了上述字符串中的构造函数
+
+`Object.prototype.toString.call(value)` //[object Array]
+
+但是不能检测非原生的JSON对象
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

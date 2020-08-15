@@ -2,6 +2,8 @@
 - [JavaScript](./chapters/javascript/README.md)
   - [数据类型](./chapters/javascript/ch01.md)
   - [原型和原型链](./chapters/javascript/原型和原型链.md)
+  - [作用域](./chapters/javascript/作用域.md)
+  - [闭包](./chapters/javascript/闭包.md)
 - [ES6](./chapters/es6/README.md)
   - [Promise](./chapters/es6/promise.md)
   - [箭头函数](./chapters/es6/箭头函数.md)
