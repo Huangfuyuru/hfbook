@@ -35,6 +35,7 @@
   - [八月](./chapters/aiot-work/八月.md)
 - [前端工程化](./chapters/webpack/README.md)
   - [webpack](./chapters/webpack/ch01.md)
+  - [git常用命令](./chapters/webpack/git.md)
 - [数据结构](./chapters/data-structure/README.md)
 - [算法](./chapters/algorithm/README.md)
   - [快速排序](./chapters/algorithm/快速排序.md)
