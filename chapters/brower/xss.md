@@ -53,3 +53,5 @@ cookie种类：会话期cookie
 3. 添加token验证
 
    在http请求中以参数的形式随机生成一个token，并在服务器建立一个拦截器来验证token
+
+[好好看](https://www.cnblogs.com/tugenhua0707/p/10909284.html#_labe0)
