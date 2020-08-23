@@ -256,3 +256,17 @@ padding
 块状化的意思是，元素一旦float的属性值不为none,则其display计算值就是block或者table
 
 为什么float 会让父元素的高度塌陷?
+
+
+
+## vertical-align
+
+vertical-align 只会对内敛元素起作用
+
+目标元素自己的基线都默认和字母x的下边缘对齐
+
+比如 vertical-align:middle 是将自己的基线变为中间，然后和x的下边缘对齐。
+
+比如一个图片的默认基线是图片的下边缘，那么他的默认显示是图片下边缘和x的下边缘对齐，当给图片设置了vertical-align:middle，那么该图片的基线就变为图片的中心线然后和x的下边缘对齐。
+
+x的大小可以通过line-height来设置。

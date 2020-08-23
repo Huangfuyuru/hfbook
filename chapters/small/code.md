@@ -128,19 +128,20 @@ function debounce(fn,time) {
 
 ## 节流
 
-当持续触发事件时，一定的时间段内只调用一次事件处理函数。
+函数节流指阻止一个函数在短时间内被连续调用。只有当上一次函数执行后达到指定的时间间隔后，才能被再次调用
+
+原理：使用定时器做时间节流。当触发一个事件时，先用setTimeout让这个事件延迟一小段时间后再执行，如果该事件在这个时间间隔中被再次触发，就clearTime上一个定时器，在setTimeout一个新的定时器重复以上的步骤。
 
 ```javascript
-function throttle(func,delay) {
-	var prev = Date.now();
-    return function() {
-        var context = this;
-        var args = arguments;
-        var now = Date.now();
-        if(now-prev >= delay){
-            func.apply(context,args)
-            prev = Date.now()
+function throttle(func,delay){
+    let timer;
+    return function(...args){
+        if(timer){
+            clearTimeout(timer)
         }
+        timer = setTimeout(()=>{
+            func.apply(this,args)
+        },delay)
     }
 }
 ```
@@ -156,7 +157,9 @@ function throttle(func,delay) {
 ```javascript
 Function.prototype._bind = function(target){
     let _this = this;
-    let args = Array.prototype.slice.call(arguments,1)
+    let args = Array.prototype.slice.call(arguments,1);
+    //let args = Array.from(arguments)
+    //args.shift();
     return function(){
         return _this.apply(target,args)
     }
@@ -219,5 +222,17 @@ function findMore(arr){
     return num
 }
 console.log(findMore(arr))
+```
+
+实现一个函数clone，可以对JavaScript中的5种主要的数据类型（包括Number、String、Object、Array、Boolean）进行值复制
+
+```javascript
+Object.prototype.clone = function(){
+    var o = this.instanceof === 'Array'?[]:{};
+    for(var e in this){
+        o[e] = typeof this[e] === 'object' ? this[e].clone() : this[e]
+    }
+    return o
+}
 ```
 
