@@ -13,6 +13,7 @@
   - [小知识点](./chapters/css/css.md)
   - [flex](./chapters/css/flex.md)
   - [布局](./chapters/css/布局.md)
+  - [动画](./chapters/css/animation.md)
 - [网络原理](./chapters/computer-network/README.md)
   - [http和https](./chapters/computer-network/ch01.md)
   - [tcp(没有看完)](./chapters/computer-network/tcp.md)
