@@ -1,5 +1,11 @@
 # react-native复习
 
+创建项目 npx react-native init ProjectName
+
+运行项目 react-native run-android
+
+连接设备 adb devices
+
 #### 常用组件
 
 View
