@@ -44,4 +44,5 @@
   * [代码集](./chapters/small/code.md)
 - [面试](./chapters/interview/README.md)
 - [笔试](./chapters/written/README.md)
-  
+- [期末复习](./chapters/test)
+  - [react-native](./chapters/test/rn.md)
