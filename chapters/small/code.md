@@ -236,3 +236,47 @@ Object.prototype.clone = function(){
 }
 ```
 
+## 获取以s或p开头的标签
+
+使用递归
+
+```javascript
+function dfs(node){
+    if(node.nodeType === 1){
+		let nodeName = node.nodeName.slice(0,1);
+        if(nodeName === 'S' || nodeName === 'P'){
+			console.log(node)
+        }
+        let children = node.childNodes;
+        for(let i=0,len=children.length;i<len;i++){
+			dfs(children[i])
+        }
+    }
+}
+dfs(document.body)
+```
+
+## 判断 [] 和 null 
+
+1. instanceof
+
+   ```javascript
+   console.log([] instanceof Object);//true
+   console.log(null instanceof Object);//false
+   ```
+
+2. !!
+
+   ```javascript
+   !!null ;//false
+   !![] ;//true
+   ```
+
+3. Object.prototype.toString.call()
+
+   ```javascript
+   Object.prototype.toString.call(null) ;// [Object Null]
+   Object.prototype.toString.call([])   ;// [Object Array]
+   ```
+
+   
