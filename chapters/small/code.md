@@ -279,4 +279,15 @@ dfs(document.body)
    Object.prototype.toString.call([])   ;// [Object Array]
    ```
 
-   
+
+## 超出省略
+
+```css
+.overflow{
+    width:200px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis
+}
+```
+
