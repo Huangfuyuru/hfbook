@@ -22,6 +22,7 @@
 - [浏览器原理](./chapters/brower/README.md)
   - [浏览器数据存储方式](./chapters/brower/ch01.md)
   - [浏览器缓存机制](./chapters/brower/ch02.md)
+  - [浏览器渲染机制](./chapters/brower/浏览器渲染.md)
   - [跨域](./chapters/brower/ch03.md)
   - [事件循环机制](./chapters/brower/eventloop.md)
   - [XSS和CSRF攻击](./chapters/brower/xss.md)
