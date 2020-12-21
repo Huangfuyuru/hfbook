@@ -22,6 +22,17 @@
 
 对人真诚，对事认真！
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 master!
+=======
+dev!
+>>>>>>> 51eb8fc... dev
+
+dev-rebase! 
 
 
+
+master-rebase!
+=======
+>>>>>>> 87e5082... show
